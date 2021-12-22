@@ -3,11 +3,11 @@ import urllib.request
 import os
 from werkzeug.utils import secure_filename
  
-app = Flask(__name__)
+app = Flask(__name__,template_folder='templates',static_folder='static')
  
-UPLOAD_FOLDER = 'uploads/'
+UPLOAD_FOLDER = 'static/uploads/'
  
-app.secret_key = "caircoders-ednalan"
+app.secret_key = "DragonX"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
  

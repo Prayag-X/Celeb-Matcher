@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Styles/style.css" />
-    <link rel="stylesheet" href="Styles/navbar.css" />
-    <link rel="stylesheet" href="Styles/homepage.css" />
-    <link rel="stylesheet" href="Styles/about.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="navbar.js"></script>
+
+    <!-- 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' -->
+    <!-- <script src="{{ url_for('static', filename='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js') }}"></script> -->
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='Styles/bootstrap.css') }}"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='Styles/style.css') }}"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='Styles/navbar.css') }}"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='Styles/homepage.css') }}"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='Styles/about.css') }}"/>
+
+    <script src="{{ url_for('static', filename='JavaScripts/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='JavaScripts/navbar.js') }}"></script>
+    
     <title>Celeb Matcher</title>
 </head>
 
@@ -35,8 +41,8 @@
     </header>
 
     <div class="home">
-        <img class="homepage" src="Assets/Homepage.png" alt="">
-        <img class="upload" src="Assets/Face blur.png" alt="">
+        <img class="homepage" src="{{ url_for('static', filename='Assets/Homepage.png') }}" alt="">
+        <img class="upload" src="{{ url_for('static', filename='Assets/Face blur.png') }}" alt="">
     </div>
 
     <div class="container">
@@ -69,44 +75,13 @@
                 </p>
             </form>
         </div>
-        </div>
-
-
-    <!-- {% block title %}Upload{% endblock %}
-
-    {% block main %}
-
-    <div class="container">
-    <div class="row">
-        <div class="col">
-
-        <h1>Upload an image</h1>
-        <hr>
-
-        <form action="/upload-image" method="POST" enctype="multipart/form-data">
-
-            <div class="form-group">
-            <label>Select image</label>
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" name="image" id="image">
-                <label class="custom-file-label" for="image">Select image...</label>
-            </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Upload</button>
-
-        </form>
-
-        </div>
     </div>
-    </div>
-
-    {% endblock %} -->
 
     <section>
         <div class="about">
-            <img src="Assets/About.png" alt="">
+            <img src="{{ url_for('static', filename='Assets/About.png') }}" alt="">
         </div>
     </section>
+    
 </body>
 </html>
