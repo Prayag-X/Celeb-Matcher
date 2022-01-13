@@ -1,0 +1,16 @@
+.homepage{
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.upload {
+    position: relative;
+    top: -616px;
+    right: -265px;
+    z-index: 10;
+    text-align: center;
+    margin-top: 10px;
+}
