@@ -18,19 +18,20 @@ I will fix it later T_T
 
 
 try:
-    with open("Utilities/Data_Store", "rb") as fp:
+    with open("Data_Store", "rb") as fp:
         doc = DocumentArray(pickle.load(fp))
 
 except:
-    os.system('Utilities/Data_To_DocArr.py')
+    os.system('Data_To_DocArr.py')
     time.sleep(60)
-    with open("Utilities/Data_Store", "rb") as fp:
+    with open("Data_Store", "rb") as fp:
         doc = DocumentArray(pickle.load(fp))
 
 # doc.plot_image_sprites('Working.png')
 
 q = (
     Document(uri='Aamir.68.jpg')
+    # Document(uri='dup_sharuk.jpg')
     .load_uri_to_image_blob()
     # .set_image_blob_normalization()
     # .set_image_blob_shape(shape=(224, 224))
@@ -48,7 +49,4 @@ with f:
     response = f.search(inputs=q, return_results=True, show_progress=True)
 
 matches = response[0].data.docs[0].matches
-
-for match in matches:
-    print(match)
-
+print(f"- {matches[0].uri}")
