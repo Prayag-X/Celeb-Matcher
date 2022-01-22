@@ -2,6 +2,8 @@ header {
     width: 100%;
     height: 0.1vh;
     z-index: 100;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
 }
 
 .stroke{
@@ -9,6 +11,7 @@ header {
 }
 
 .logo {
+    /* background: url('../Assets/logo.png') no-repeat center center/cover; */
     line-height: 30px;
     position: fixed;
     float: left;
@@ -18,6 +21,7 @@ header {
     font-size: 20px;
     letter-spacing: 2px;
 }
+
 
 nav {
     position: fixed;
@@ -80,7 +84,7 @@ nav.fill ul li a:after {
   content: '.';
   color: transparent;
   background: rgb(38, 0, 255);
-  height: 5px;
+  height: 3px;
 }
 nav.stroke ul li a:hover:after {
   width: 100%;

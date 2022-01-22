@@ -1,0 +1,53 @@
+
+ .file_inp
+{
+    border-radius: 6px;
+    height: 1.5rem;
+    position: relative;
+    top: 4px;
+    padding-left: 5px;
+    left: 9px;
+
+} 
+
+.upload_bar {
+    color: midnightblue;
+    margin-top: -7px;
+}
+
+.dflex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up
+{
+    font-weight: bold;
+    margin-left: 5px;
+    width: 5.5rem;
+    border-radius: 6px;
+    height: 2.4rem;
+    border: 3px solid #4051e6;
+    font-size: 0.85rem;
+    border: 3px solid #4051e6;
+    background: midnightblue;
+    color: cyan;
+}
+.up:hover
+{
+    cursor: pointer;
+    background-color: #000957;
+    color: rgb(250, 237, 60);
+}
+
+.wrap
+{
+    height: 2rem;
+    margin: 2px;
+    border: 3px solid #4051e6;
+    border-radius: 6px;
+    background: whitesmoke;
+}
+

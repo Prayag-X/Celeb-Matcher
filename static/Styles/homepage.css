@@ -6,11 +6,71 @@
     width: 100%;
 }
 
-.upload {
-    position: relative;
-    top: -616px;
-    right: -265px;
-    z-index: 10;
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background: url('../Assets/Homepage2.png') no-repeat center center/cover;
+    height: 130vh;
+}
+
+.boruto
+{
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    margin-top: 94px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Text1 {
     text-align: center;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+.Text2 {
+    margin-top: -5px;
+}
+
+.TextM {
+    color:white;
+    margin-top: 57px;
+}
+
+.Text3 {
+    margin-top: 50px;
+    font-size: 29px;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(0, 5, 80);
+}
+
+.Text4 {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    margin-top: -8px;
+    color: rgb(129, 25, 25);
+    text-align: center;
+    font-size: 17px;
+    width: 1000px;
+}
+
+.Equal {
+    width: 91px;
+    margin: 49px
+}
+
+.upload {
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 100px;
+}
+
+.show_upload {
+    margin-top: 67px;
 }

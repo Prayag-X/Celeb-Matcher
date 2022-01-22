@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: 81px;
+}
+
+.footer img {
+    transition: all .15s;
+    height: 45px;
+    display: flex;
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+.footer img:hover {
+    height: 55px;
+    transition: all .15s;
+}
+
