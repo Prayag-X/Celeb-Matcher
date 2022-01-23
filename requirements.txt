@@ -2,6 +2,7 @@ Flask==2.0.2
 importlib-metadata==4.10.0
 jina==2.5.3
 jina-commons==0.0.1
+gunicorn==20.1.0
 kubernetes==20.13.0
 lightning-flash==0.6.0
 matplotlib==3.5.1
