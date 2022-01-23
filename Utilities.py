@@ -1,8 +1,6 @@
 from PIL import Image
 import wikipedia
-from jina import Document, DocumentArray
-import glob
-import pickle
+
 
 def crop_center(pil_img, crop_width, crop_height):
     img_width, img_height = pil_img.size
